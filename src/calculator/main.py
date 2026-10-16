@@ -1,4 +1,3 @@
-"""Command-line interface for the simple calculator."""
 
 import argparse
 import sys
@@ -25,7 +24,6 @@ OPERATIONS = {
 
 
 def run_operation(operation: str, operands: List[float]) -> float:
-    """Execute a named operation with the provided operands."""
     if operation not in OPERATIONS:
         raise ValueError(f"Unknown operation: {operation}")
 
@@ -39,7 +37,6 @@ def run_operation(operation: str, operands: List[float]) -> float:
 
 
 def main(argv: Optional[List[str]] = None) -> int:
-    """Parse arguments, run the requested calculation, and print the result."""
     parser = argparse.ArgumentParser(
         description="Simple calculator supporting basic financial and arithmetic operations."
     )

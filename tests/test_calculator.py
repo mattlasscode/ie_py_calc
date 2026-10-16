@@ -1,5 +1,3 @@
-"""Unit tests for calculator.py and main.py."""
-
 import io
 import sys
 import unittest
@@ -10,7 +8,6 @@ import main
 
 
 class TestCalculator(unittest.TestCase):
-    """Tests for the core arithmetic functions."""
 
     def test_add(self):
         self.assertEqual(calculator.add(2, 3), 5)
@@ -45,7 +42,6 @@ class TestCalculator(unittest.TestCase):
 
 
 class TestMain(unittest.TestCase):
-    """Tests for the command-line interface."""
 
     def test_run_operation_add(self):
         self.assertEqual(main.run_operation("add", [2, 3]), 5)
